@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int main(){
+int arr[60],s,temp,i;
+cout<<"size:";
+cin>>s;
+for(i=1;i<=s;i++)
+{
+    cin>>arr[i];
+}
+cout<<"output:";
+for(i=1;i<=s;i++)
+{
+    cout<<arr[i]<<"\n";
+}
+int j=s;
+for(i=1;i<=(j/2);i++)
+		{
+			temp=arr[j];
+			arr[j]=arr[i];
+			arr[i]=temp;
+			j--;
+		}
+		cout<<"reverse:";
+
+for(i=1;i<=s;i++){
+            cout<<arr[i]<<"\n";
+}
+}
